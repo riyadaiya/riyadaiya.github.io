@@ -204,6 +204,14 @@ h2 + p {
     object-fit: cover;
 }
 
+.project-card h3 {
+    padding: 1rem 1.5rem;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
 .project-card h4 {
     padding: 1rem 1.5rem;
     margin: 0;
