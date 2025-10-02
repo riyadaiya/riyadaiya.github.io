@@ -116,7 +116,7 @@ a {
 
 a:hover {
     color: #0052a3;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Contact Links Section */
@@ -212,4 +212,28 @@ h2 + p {
     }
 }
 
+.selected {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+/* SVG Container */
+svg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* background-color: #fff; */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+    margin: 2rem 0;
+    display: block;
+}
+
+#skills-chart {
+    min-height: 500px;
+}
+
+#svg-art {
+    min-height: 600px;
+}
 
