@@ -1,0 +1,215 @@
+/* html {
+    margin: 2rem;
+    background-color: rgb(221, 229, 241);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #0066cc;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0066cc;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Main Content Container */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 3rem 0 1.5rem 0;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 3rem 0 1rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 3rem 0 1rem 0;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #0052a3;
+    text-decoration: underline;
+}
+
+/* Contact Links Section */
+h3 + a {
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #fff;
+    border: 2px solid #0066cc;
+    border-radius: 8px;
+    color: #0066cc;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+h3 + a:hover,
+h3 + a:hover ~ a:hover {
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+}
+
+a[href*="linkedin"],
+a[href*="gmail"],
+a[href*="framer"] {
+    display: inline-block;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #fff;
+    border: 2px solid #0066cc;
+    border-radius: 8px;
+    color: #0066cc;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+a[href*="linkedin"]:hover,
+a[href*="gmail"]:hover,
+a[href*="framer"]:hover {
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+}
+
+/* Projects Section */
+h2 + p {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    nav {
+        padding: 1rem 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    a[href*="linkedin"],
+    a[href*="gmail"],
+    a[href*="framer"] {
+        display: block;
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+}
+
+
