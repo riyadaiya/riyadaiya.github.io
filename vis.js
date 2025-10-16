@@ -71,57 +71,6 @@ title.setAttribute('fill', '#1a1a1a');
 title.textContent = 'SVG Art: Flow';
 svg.appendChild(title);
 
-// // Create flowing organic shapes
-// function createFlowingShape(startX, startY, gradientId, delay) {
-//     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    
-//     // Create smooth bezier curve path
-//     const cp1x = startX + Math.random() * 200 - 100;
-//     const cp1y = startY + Math.random() * 150;
-//     const cp2x = startX + Math.random() * 200 - 100;
-//     const cp2y = startY + Math.random() * 150 + 100;
-//     const endX = startX + Math.random() * 100 - 50;
-//     const endY = startY + 300;
-    
-//     const d = `M ${startX},${startY} C ${cp1x},${cp1y} ${cp2x},${cp2y} ${endX},${endY}`;
-    
-//     path.setAttribute('d', d);
-//     path.setAttribute('fill', 'none');
-//     path.setAttribute('stroke', `url(#${gradientId})`);
-//     path.setAttribute('stroke-width', Math.random() * 30 + 10);
-//     path.setAttribute('stroke-linecap', 'round');
-//     path.setAttribute('opacity', '0');
-//     path.style.transition = 'opacity 1.5s ease';
-    
-//     svg.appendChild(path);
-    
-//     // Animate in
-//     setTimeout(() => {
-//         path.style.opacity = '0.3';
-//     }, delay);
-    
-//     // Add hover effect
-//     path.addEventListener('mouseenter', () => {
-//         path.style.opacity = '0.7';
-//         path.style.transition = 'opacity 0.3s ease';
-//     });
-    
-//     path.addEventListener('mouseleave', () => {
-//         path.style.opacity = '0.3';
-//         path.style.transition = 'opacity 0.3s ease';
-//     });
-    
-//     return path;
-// }
-
-// Create multiple flowing shapes
-// for (let i = 0; i < 8; i++) {
-//     const x = 100 + (i * 80);
-//     const y = 100;
-//     const gradientId = i % 2 === 0 ? 'grad1' : 'grad2';
-//     createFlowingShape(x, y, gradientId, i * 150);
-// }
-
 // Create animated circles
 function createCircle(cx, cy, r, color, delay) {
     const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
