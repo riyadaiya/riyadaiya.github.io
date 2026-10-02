@@ -1,5 +1,5 @@
 # riyadaiya.github.io
-IAT 355 Assignment 2 Personal Website
+V1 of my personal website
 
 This personal website is to showcase my skills, experiences, and some of my SVG visualisation works.
 
